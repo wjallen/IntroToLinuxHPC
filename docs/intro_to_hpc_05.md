@@ -46,13 +46,13 @@ $ ls results/
 
 Next, we need to fill out `job.slurm` to request the necessary resources. I have some experience with `autodock_vina`, so I can reasonably predict how much we will need. When running your first jobs with your applications, it will take some trial and error, and reading online documentation, to get a feel for how many resources you should use. Open `job.slurm` with VIM and fill out the following information:
 ```
-#SBATCH -J vina_job      # Job name
-#SBATCH -o vina_job.o%j  # Name of stdout output file (%j expands to jobId)
-#SBATCH -p development   # Queue name
-#SBATCH -N 1             # Total number of nodes requested (16 cores/node)
-#SBATCH -n 1             # Total number of mpi tasks requested
-#SBATCH -t 00:10:00      # Run time (hh:mm:ss)
-#SBATCH -A CTLS2017      # <-- Allocation name to charge job against
+#SBATCH -J vina_job          # Job name
+#SBATCH -o vina_job.o%j      # Name of stdout output file (%j expands to jobId)
+#SBATCH -p development       # Queue name
+#SBATCH -N 1                 # Total number of nodes requested (16 cores/node)
+#SBATCH -n 1                 # Total number of mpi tasks requested
+#SBATCH -t 00:10:00          # Run time (hh:mm:ss)
+#SBATCH -A MDACC-2017-06-30  # <-- Allocation name to charge job against
 ```
 
 Now, we need to provide instructions to the compute node on how to run `autodock_vina`. This information would come from the `autodock_vina` instruction manual. Continue editing `job.slurm` with VIM, and add this to the bottom:
