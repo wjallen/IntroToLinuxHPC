@@ -1,6 +1,6 @@
-# Introduction to Linux and High Performance Computing for Life Sciences
+# Introduction to Linux and HPC for Life Sciences
 
-### Course Objectives
+### Workshop Objectives
 
 The workshop is designed to introduce skills required to perform computational research in the life sciences. It will cover topics in the Linux command line interface, the text editor VIM, and high performance computing. This workshop is intended for people who have little to no experience with a command line interface, but intend to use a Linux workstation or HPC cluster for life science research.
 
