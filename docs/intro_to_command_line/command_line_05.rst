@@ -3,7 +3,7 @@ Network and File Transfers
 
 In order to login or transfer files to a remote Linux file system, you must know the hostname (unique network identifier) and the username. If you are already on a Linux file system, those are easy to determine using the following commands:
 
-.. code-block:: bash
+.. code-block:: console
 
    $ whoami
    wallen
@@ -12,7 +12,7 @@ In order to login or transfer files to a remote Linux file system, you must know
 
 Given that information, a user would remotely login to this Linux machine using the Terminal command:
 
-.. code-block:: bash
+.. code-block:: console
 
    $ ssh wallen@ls6.tacc.utexas.edu
    (enter password)
@@ -20,7 +20,7 @@ Given that information, a user would remotely login to this Linux machine using 
 
 Windows users would typically use the program **PuTTY** to perform this operation. Logging out of a remote system is done using the ``logout`` command, or the shortcut ``<Ctrl+d>``:
 
-.. code-block:: bash
+.. code-block:: console
 
   [ls6]$ logout
   [local]$
@@ -29,7 +29,7 @@ To practice transferring files to Lonestar6's ``$WORK`` and ``$SCRATCH``, we nee
 
 To identify the path to our ``$WORK`` directory, we can use ``cd $WORK`` or the helpful shortcut ``cdw``:
 
-.. code-block:: bash
+.. code-block:: console
    
    $ cdw
    $ pwd
@@ -37,7 +37,7 @@ To identify the path to our ``$WORK`` directory, we can use ``cd $WORK`` or the 
 
 To identify the path to our ``$SCRATCH`` directory, we can use ``cd $SCRATCH`` or the helpful shortcut ``cds``:
 
-.. code-block:: bash
+.. code-block:: console
    
    $ cds
    $ pwd
@@ -45,7 +45,7 @@ To identify the path to our ``$SCRATCH`` directory, we can use ``cd $SCRATCH`` o
 
 Copying files from your local computer to Lonestar6's ``$WORK`` would require the ``scp`` command (Windows users use the program "WinSCP"):
 
-.. code-block:: bash
+.. code-block:: console
 
    [local]$ scp my_file wallen@ls6.tacc.utexas.edu:/work/03439/wallen/ls6
    (enter password)
@@ -55,7 +55,7 @@ In this command, you specify the name of the file you want to transfer (``my_fil
 
 Copying files from your local computer to Lonestar6's ``$SCRATCH`` using ``scp``:
 
-.. code-block:: bash
+.. code-block:: console
 
    [local]$ scp my_file wallen@ls6.tacc.utexas.edu:/scratch/03439/wallen
    (enter password)
@@ -63,7 +63,7 @@ Copying files from your local computer to Lonestar6's ``$SCRATCH`` using ``scp``
 
 Copy files from Lonestar6 to your local computer using the following:
 
-.. code-block:: bash
+.. code-block:: console
 
    [local]$ scp wallen@ls6.tacc.utexas.edu:/work/03439/wallen/ls6/my_file ./
    (enter password)
@@ -73,12 +73,12 @@ Note: If you wanted to copy ``my_file`` from ``$SCRATCH``, the path you would sp
  
 Instead of files, full directories can be copied using the "recursive" flag (``scp -r ...``). The ``rsync`` tool is an advanced copy tool that is useful for synching data between two sites. Although we will not go into depth here, example ``rsync`` usage is as follows:
 
-.. code-block:: bash
+.. code-block:: console
 
    $ rsync -azv local remote
    $ rsync -azv remote local
 
-This is just the basics of copying files. See example ``scp`` usage `here <https://en.wikipedia.org/wiki/Secure_copy>`_ and example ``rsync`` usage `here <https://en.wikipedia.org/wiki/Rsync>`_.
+This is just the basics of copying files. See example ``scp`` usage `here-1 <https://en.wikipedia.org/wiki/Secure_copy>`_ and example ``rsync`` usage `here-2 <https://en.wikipedia.org/wiki/Rsync>`_.
 
 Exercise
 ^^^^^^^^

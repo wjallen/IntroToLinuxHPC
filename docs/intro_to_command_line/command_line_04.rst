@@ -50,7 +50,6 @@ A summary of the most important keys to know for normal mode are (more on your c
 
 For more information, see:
   * `http://openvim.com/ <http://openvim.com/>`_
-  * `http://vim-adventures.com/ <http://vim-adventures.com/>`_
   * Or type on the command line: ``vimtutor``
 
 Exercise

@@ -4,7 +4,7 @@ Creating and Manipulating Files
 
 We have seen how to navigate around the filesystem and perform operations with folders. But, what about files? Just like on Windows or Mac, we can easily create new files, copy files, rename files, and move files to different locations. First, we will navigate to the home directory and create a few new folders and files with the ``mkdir`` and ``touch`` commands:
 
-.. code-block:: bash
+.. code-block:: console
 
    $ cd     # cd on an empty line will automatically take you back to the home directory
    $ pwd
@@ -20,14 +20,14 @@ We have seen how to navigate around the filesystem and perform operations with f
 
 These files we have created are all empty. Removing a file is done with the ``rm`` (remove) command. Please note that on Linux file systems, there is no "Recycle Bin". Any file or folder removed is gone forever and often un-recoverable:
 
-.. code-block:: bash 
+.. code-block:: console 
 
    $ touch junkfile
    $ rm junkfile
 
 Moving files with the ``mv`` command and copying files with the ``cp`` command works similarly to how you would expect on a Windows or Mac machine. The context around the move or copy operation determines what the result will be. For example, we could move and/or copy files into folders:
 
-.. code-block:: bash
+.. code-block:: console
 
    $ mv file_a folder1/
    $ mv file_b folder2/
@@ -35,7 +35,7 @@ Moving files with the ``mv`` command and copying files with the ``cp`` command w
 
 Before listing the results with ``ls`` or ``tree``, try to guess what the result will be.
 
-.. code-block:: bash
+.. code-block:: console
 
    $ tree .
    .
@@ -49,14 +49,14 @@ Before listing the results with ``ls`` or ``tree``, try to guess what the result
 
 Two files have been moved into folders, and ``file_c`` has been copied - so there is still a copy of ``file_c`` in the home directory. Move and copy commands can also be used to change the name of a file:
 
-.. code-block:: bash
+.. code-block:: console
 
    $ cp file_c file_c_copy
    $ mv file_c file_c_new_name
 
 By now, you may have found that Linux is very unforgiving with typos. Generous use of the ``<Tab>`` key to auto-complete file and folder names, as well as the ``<UpArrow>`` to cycle back through command history, will greatly improve the experience. As a general rule, try not to use spaces or strange characters in files or folder names. Stick to:
 
-.. code-block:: bash
+.. code-block:: console
 
    A-Z     # capital letters
    a-z     # lowercase letters
@@ -67,7 +67,7 @@ By now, you may have found that Linux is very unforgiving with typos. Generous u
 
 Before we move on, let's clean up once again by removing the files and folders we have created. Do you remember the command for removing non-empty folders?
 
-.. code-block:: bash
+.. code-block:: console
 
    $ rm -r folder1
    $ rm -r folder2
@@ -75,17 +75,11 @@ Before we move on, let's clean up once again by removing the files and folders w
 
 How do we remove ``file_c_copy`` and ``file_c_new_name``?
 
-.. code-block:: bash
+.. code-block:: console
 
    $ rm file_c_copy
    $ rm file_c_new_name
 
-Exercise
-^^^^^^^^
-1. Navigate to your home directory
-2. Execute this exact command: ``cp -r /work/03439/wallen/public/challenge02 ./``
-3. Navigate into the ``challenge02`` folder
-4. Somewhere within there is a file. Can you find it?
 
 Review of Topics Covered
 ^^^^^^^^^^^^^^^^^^^^^^^^

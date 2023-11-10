@@ -2,30 +2,6 @@
 Introduction to the Linux Command Line 
 ======================================
 
-Set Up Reminder
-^^^^^^^^^^^^^^^
-
-To log in to Lonestar6, follow the instructions for your operating system below.
-
-**Mac / Linux**
-
-.. code-block:: bash
-
-   Open the application 'Terminal'
-   ssh username@ls6.tacc.utexas.edu
-   (enter password)
-   (enter 6-digit token)
-
-**Windows**
-
-.. code-block:: bash
-
-   Open the application 'PuTTY'
-   enter Host Name: ls6.tacc.utexas.edu
-   (click 'Open')
-   (enter username)
-   (enter password)
-   (enter 6-digit token)
 
 Module Objectives
 ^^^^^^^^^^^^^^^^^

@@ -1,10 +1,9 @@
-
 Looking at the Contents of Files
 ================================
 
 Everything we have seen so far has been with empty files and folders. We will now start looking at some real data. Navigate to your home directory, then issue the following ``cp`` command to copy a "tar archive" file from me:
 
-.. code-block:: bash
+.. code-block:: console
 
    $ cd ~    # the tilde ~ is also a shortcut referring to your home directory
    $ pwd
@@ -15,7 +14,7 @@ Try to use ``<Tab>`` to autocomplete the name of the file. Do NOT change the use
 
 This archive file is actually a bundle of many files and folders, all packed into one nice, easily transportable object. Once it is copied over, un-pack the file with the following command:
 
-.. code-block:: bash
+.. code-block:: console
 
    $ ls
    IntroToLinuxHPC.tar
@@ -23,7 +22,7 @@ This archive file is actually a bundle of many files and folders, all packed int
 
 In the first lab (``Lab01``), we have a file called ``websters.txt``. This a list of all the words in Webster's Dictionary. But how can we see the contents of the file?
 
-.. code-block:: bash
+.. code-block:: console
 
    $ cd IntroToLinuxHPC
    $ cd Lab01
@@ -34,7 +33,7 @@ In the first lab (``Lab01``), we have a file called ``websters.txt``. This a lis
 
 If you want to see the contents of a file, use the ``cat`` command to print it to screen:
 
-.. code-block:: bash
+.. code-block:: console
 
    $ cat websters.txt
    A
@@ -48,13 +47,13 @@ If you want to see the contents of a file, use the ``cat`` command to print it t
 
 This is a long file! Printing everything to screen is much too fast and not very useful. We can use a few other commands to look at the contents of the file with ``more`` control:
 
-.. code-block:: bash
+.. code-block:: console
 
    $ more websters.txt
 
 Press the ``<Enter>`` key to scroll through line-by-line, or the ``<Space>`` key to scroll through page-by-page. Press ``q`` to quit the view, or ``<Ctrl+c>`` to force a quit if things freeze up. A ``%`` indicator at the bottom of the screen shows your progress through the file. This is still a little bit messy and fills up the screen. The ``less`` command has the same effect, but is a little bit cleaner:
 
-.. code-block:: bash
+.. code-block:: console
 
    $ less websters.txt
 
@@ -62,14 +61,14 @@ Scrolling through the data is the same, but now we can also search the data. Pre
 
 Finally, you can view just the beginning or the end of a file with the ``head`` and ``tail`` commands. For example:
 
-.. code-block:: bash
+.. code-block:: console
 
    $ head websters.txt
    $ tail websters.txt
 
 The ``>`` and ``>>`` shortcuts in Linux indicate that you would like to redirect the output of one of the commands above. Instead of printing to screen, the output can be redirected into a file:
 
-.. code-block:: bash
+.. code-block:: console
 
    $ cat websters.txt > websters_new.txt
    $ head websters.txt > first_10_lines.txt
@@ -78,7 +77,7 @@ A single greater than sign ``>`` will redirect and **overwrite** any contents in
 
 One final useful way to look at the contents of files is with the ``grep`` command. ``grep`` searches a file for a specific pattern, and returns all lines that match the pattern. For example:
 
-.. code-block:: bash
+.. code-block:: console
 
    $ grep "banana" websters.txt
    banana
