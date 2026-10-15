@@ -9,7 +9,12 @@ Open a file (or create a new file if it does not exist):
  
    $ vim file_name
 
-There are two "modes" in VIM that we will talk about today. They are called "insert mode" and "normal mode". In insert mode, the user is typing text into a file as seen through the terminal (think about typing text into TextEdit or Notepad). In normal mode, the user can perform other functions like save, quit, cut and paste, find and replace, etc. (think about clicking the menu options in TextEdit or Notepad). The two main keys to remember to toggle between the modes are ``i`` and ``Esc``.
+There are two "modes" in VIM that we will talk about today. They are called "insert mode" and
+"normal mode". In insert mode, the user is typing text into a file as seen through the terminal
+(think about typing text into TextEdit or Notepad). In normal mode, the user can perform other
+functions like save, quit, cut and paste, find and replace, etc. (think about clicking the menu
+options in TextEdit or Notepad). The two main keys to remember to toggle between the modes are
+``i`` and ``Esc``.
 
 Entering VIM insert mode:
 
@@ -48,19 +53,18 @@ A summary of the most important keys to know for normal mode are (more on your c
            :w        save the file, continue editing
            :wq       save and quit
 
-For more information, see:
-  * `http://openvim.com/ <http://openvim.com/>`_
-  * Or type on the command line: ``vimtutor``
+
 
 Exercise
-^^^^^^^^
+--------
 
 1. Navigate to the ``Lab03`` directory.
 2. Open up the file called ``tutorial.txt`` and follow the instructions within.
 3. Create a new file called ``my_name.txt``, write your name within the file, save and quit, then print the contents of the file to screen.
 
+
 Review of Topics Covered
-^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------
 
 +------------------------------------+-------------------------------------------------+
 | Command                            |          Effect                                 |
@@ -82,3 +86,8 @@ Review of Topics Covered
 |  ``:wq``                           |  save and quit                                  |
 +------------------------------------+-------------------------------------------------+
   
+Additional Resources
+--------------------
+
+* `Practice VIM in a web browser <http://openvim.com/>`_
+* Practice VIM on the command line by typing ``vimtutor``

@@ -1,6 +1,5 @@
-
-Running Jobs 
-============
+Running Batch Jobs 
+==================
 
 Module Objectives
 ^^^^^^^^^^^^^^^^^

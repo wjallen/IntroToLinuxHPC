@@ -16,9 +16,9 @@ cluster in their work.
    :caption: Contents:
 
    intro/intro_to_hpc
-   intro_to_command_line/overview
-   intro_to_job_submissions/overview
-
+   linux/linux
+   vim/vim
+   batch/overview
 
 
 Indices and tables

@@ -1,4 +1,3 @@
-
 Introduction
 ============
 
@@ -6,7 +5,7 @@ High performance computing (HPC) uses powerful computing systems to process larg
 perform complex analyses beyond the capabilities of a typical desktop computer. Researchers across
 disciplines are increasingly turning to HPC as their data and computational needs grow, enabling
 more detailed simulations, larger analyses, and faster scientific discovery. By the end of this
-section, you should be able to:
+section, participants should be able to:
  
 * Describe the basic architecture of an HPC system
 * Log in to an HPC system at TACC
