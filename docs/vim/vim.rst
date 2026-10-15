@@ -55,7 +55,7 @@ A summary of the most important keys to know for normal mode are (more on your c
 
 
 
-Exercise
+EXERCISE
 --------
 
 1. Navigate to the ``Lab03`` directory.

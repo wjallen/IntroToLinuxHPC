@@ -13,7 +13,7 @@ containing a list of the resources we need, and containing the command(s) for ru
 application. Then, we submit that text file to a queue to run on compute nodes. This process is
 called **batch job submission**.
 
-After going through this module, students should be able to:
+After going through this module, participants should be able to:
 
 * Find and assemble input data needed for a docking calculation
 * Load the appropriate docking software into your PATH
@@ -124,7 +124,7 @@ Open ``job.slurm`` with your preferred text editor and fill out the following in
    #SBATCH -N 1             # Total # of nodes (must be 1 for serial)
    #SBATCH -n 1             # Total # of mpi tasks (should be 1 for serial)
    #SBATCH -t 00:10:00      # Run time (hh:mm:ss)
-   #SBATCH -A OTH24028      # Project/Allocation name (req'd if you have more than 1)
+   #SBATCH -A ALLOCATION    # Project/Allocation name (req'd if you have more than 1)
 
 
 Now, we need to provide instructions to the compute node on how to run ``autodock_vina``. This
@@ -222,7 +222,7 @@ EXERCISE
 
 .. tip::
 
-   Refer to the `AutoDock Vina ReadTheDocs <https://autodock-vina.readthedocs.io/en/latest/>` for
+   Refer to the `AutoDock Vina ReadTheDocs <https://autodock-vina.readthedocs.io/en/latest/>`_ for
    tips on using the command, or run ``vina --help``.
 
 
@@ -234,6 +234,4 @@ EXERCISE
 Additional Resources
 --------------------
 
-* `TACC Docs <https://docs.tacc.utexas.edu/>`_
-* `Lonestar6 Docs <https://docs.tacc.utexas.edu/hpc/lonestar6/>`_
 * `AutoDock-Vina <https://github.com/ccsb-scripps/AutoDock-Vina>`_

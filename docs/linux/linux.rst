@@ -376,7 +376,7 @@ searches a file for a specific pattern, and returns all lines that match the pat
 
 Although it is not always necessary, it is safe to put the search term in quotes. More on ``grep`` later.
 
-Exercise
+EXERCISE
 ~~~~~~~~
 
 1. Extract every word from ``websters.txt`` that contains the string ``apple``, and put it into a new file called ``apple.txt``.
@@ -487,7 +487,7 @@ This is just the basics of copying files. See example ``scp`` usage
 `here-2 <https://en.wikipedia.org/wiki/Rsync>`_.
 
 
-Exercise
+EXERCISE
 ~~~~~~~~
 
 1. Identify which Lonestar6 login node you are on (login1, login2, login3)

@@ -1,10 +1,5 @@
-Running Batch Jobs 
-==================
-
-
-
 HPC System Architecture
------------------------
+=======================
 
 As a reminder, it is important to understand the basic architecture of HPC systems. Think of an HPC
 resource as a very large and complicated lab instrument. Users need to learn how to:

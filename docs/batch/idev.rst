@@ -56,11 +56,11 @@ Some of the most useful flags to customize the session include:
   Lonestar6's GPU nodes, use the command line option ``-p gpu-a100`` or ``-p gpu-a100-dev``. 
   You can learn more about the different queues of Lonestar6 `here <https://docs.tacc.utexas.edu/hpc/lonestar6/#table5>`_.
 * To start a two-hour interactive session on a compute node in the development queue with 
-  our ``OTH24028`` allocation:
+  our training allocation:
 
 .. code-block:: console
    
-   [ls6]$ idev -m 120 -p development -A OTH24028
+   [ls6]$ idev -m 120 -p development -A ALLOCATION_NAME
 
 If successful, you will see output that includes the following excerpts:
 
@@ -76,7 +76,7 @@ If successful, you will see output that includes the following excerpts:
     -> Nodes            : 1              (idev  default       )                                                                                                                                                        
     -> Tasks per Node   : 128            (Queue default       )                                                                                                                                                        
     -> Time (minutes)   : 120            (cmd line: -m        )                                                                                                                                                        
-    -> Project          : OTH24028       (~/.idevrc           )                                                                                                                                                        
+    -> Project          : ALLOCATION       (~/.idevrc           )                                                                                                                                                        
                                                         
    -----------------------------------------------------------------                                                                                                                                                   
               Welcome to the Lonestar6 Supercomputer                                                                                                                                                                   
@@ -87,7 +87,7 @@ If successful, you will see output that includes the following excerpts:
    --> Verifying valid jobname...OK                                                                                                                                                                                    
    --> Verifying valid ssh keys...OK                                                                         
    --> Verifying access to desired queue (development)...OK                                                                                                                                                            
-   --> Checking available allocation (OTH24028)...OK                                                         
+   --> Checking available allocation (ALLOCATION)...OK                                                         
    --> Verifying that quota for filesystem /home1/03439/wallen is at 75.08% allocated...OK                                                                                                                             
    --> Verifying that quota for filesystem /work/03439/wallen/ls6 is at 62.13% allocated...OK                                                                                                                          
    Submitted batch job 3085466                                                                               

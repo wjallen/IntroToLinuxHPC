@@ -1,5 +1,5 @@
-Running Batch Jobs 
-==================
+High Performance Computing
+==========================
 
 This final unit is designed to introduce the process for performing computational research on HPC
 resources. It will cover topics including logging in to an HPC system at TACC,

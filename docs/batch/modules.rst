@@ -7,7 +7,7 @@ versions of software, and access libraries without the need for complex configur
 purposes, we will be using software containers alongside the module system to manage software
 dependencies.
 
-After going through this module, students should be able to:
+After going through this module, participants should be able to:
 
 * Find software modules in the module system on TACC HPC machines
 * Modify your environment by loading and unloading software modules
@@ -166,6 +166,4 @@ Review of Topics Covered
 Additional Resources
 --------------------
 
-* `TACC Docs <https://docs.tacc.utexas.edu/>`_
-* `Lonestar6 Docs <https://docs.tacc.utexas.edu/hpc/lonestar6/>`_
 * `Lmod Docs <https://lmod.readthedocs.io/en/latest/>`_
