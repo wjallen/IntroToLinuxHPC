@@ -6,20 +6,16 @@
 Introduction to Linux and HPC
 =============================
 
-The workshop is designed to introduce skills required to perform computational
-research in domain sciences. It will cover topics in the Linux command line interface,
-the text editor VIM, and high performance computing. This workshop is intended for
-people who have little to no experience with a command line interface, but intend
-to use a Linux workstation or HPC cluster for domain science research.
-
-
+This workshop introduces foundational computing skills needed for scientific research, including
+the Linux command line, the Vim text editor, and high-performance computing (HPC). It is designed
+for researchers with little to no command line experience who plan to use a Linux workstation or HPC
+cluster in their work.
 
 .. toctree::
    :maxdepth: 1
    :caption: Contents:
 
-   intro_to_hpc/intro_to_hpc
-   setup/setup
+   intro/intro_to_hpc
    intro_to_command_line/overview
    intro_to_job_submissions/overview
 
