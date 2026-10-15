@@ -1,5 +1,7 @@
 # Introduction to Using High Performance Computing
 
+Docs available: https://introtolinuxhpc.readthedocs.io/en/latest/
+
 ### Outline
 
 Node and HPC Basics
@@ -20,3 +22,5 @@ Submitting a Job
 
 * Interactive sessions using idev
 * Batch job submission
+
+
