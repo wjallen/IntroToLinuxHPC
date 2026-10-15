@@ -1,25 +1,20 @@
 Running Batch Jobs 
 ==================
 
-Module Objectives
-^^^^^^^^^^^^^^^^^
+This final unit is designed to introduce the process for performing computational research on HPC
+resources. It will cover topics including logging in to an HPC system at TACC,
+navigating file systems, the module system, submitting batch jobs, and running jobs interactively.
 
-This module will be fully interactive. Participants are **strongly encouraged** to follow along on the command line. After taking this module, participants should be able to:
-
- * Prepare and submit a batch job to a queue
- * Initiate an interactive session using idev
-
-Topics Covered
-^^^^^^^^^^^^^^
-
- * Batch job submission, commands dependent on system (``sbatch``, ``showq``, ``scancel``).
- * Interactive sessions with ``idev`` (``idev``, ``idev -help``)
 
 .. toctree::
    :maxdepth: 1
-   :caption: Sections:
 
-   job_submission_01.rst
-   job_submission_02.rst
+   intro_to_hpc
+   modules
+   batch_job_submission
+   hands_on_lab
+   idev
+   tap
+
 
 

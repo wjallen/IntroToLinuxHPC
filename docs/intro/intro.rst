@@ -156,61 +156,6 @@ If your login was successful, your terminal will look something like this:
 
 
 
-File Systems
-------------
-
-The account-level environment variables ``$HOME``, ``$WORK``, and ``$SCRATCH`` store the paths to
-directories that you own on each of these file systems. 
- 
-+---------------------+-----------------------------------+--------------------------------------------------------------------------------------------------------------------+
-| File System         | Quota                             | Key Features                                                                                                       | 
-+=====================+===================================+====================================================================================================================+
-| ``$HOME``           |- 10GB                             |- Backed up.                                                                                                        |
-|                     |                                   |- Recommended Use: scripts and templates, environment settings, compilation, cron jobs                              |
-+---------------------+-----------------------------------+--------------------------------------------------------------------------------------------------------------------+
-| ``$WORK``           |- 1TB                              |- NOT backed up.                                                                                                    |
-|                     |- 3,000,000 files                  |- Recommended Use: software installations, original datasets that can't be reproduced.                              |
-+---------------------+-----------------------------------+--------------------------------------------------------------------------------------------------------------------+
-| ``$SCRATCH``        |- No quota assigned                |- NOT backed up.                                                                                                    |
-|                     |                                   |- Recommended Use: Reproducible datasets, I/O files: temporary files, checkpoint/restart files, job output files    |
-+---------------------+-----------------------------------+--------------------------------------------------------------------------------------------------------------------+
-
-Files in ``$SCRATCH`` are subject to purge if access time is more than 10 days old.
-
-
-Navigating File Systems
-~~~~~~~~~~~~~~~~~~~~~~~
-
-To navigate the different file systems available on TACC HPC systems, you can use the standard
-``cd`` command along with the ``PATH``, or you can use some TACC-specific shortcuts:
-
-1. **Home Directory**: To change to your home directory, you can use:
-
-   .. code-block:: console
-
-      [ls6]$ cd $HOME
-      # or
-      [ls6]$ cd
-
-2. **Work Directory**: To change to your work directory, you can use:
-
-   .. code-block:: console
-
-      [ls6]$ cd $WORK
-      # or
-      [ls6]$ cdw
-
-2. **Scratch Directory**: To change to your scratch directory, you can use:
-
-   .. code-block:: console
-
-      [ls6]$ cd $SCRATCH
-      # or
-      [ls6]$ cds
-
-
-
-
 
 
 Tips for Success

@@ -15,15 +15,8 @@ cluster in their work.
    :maxdepth: 1
    :caption: Contents:
 
-   intro/intro_to_hpc
+   intro/intro
    linux/linux
    vim/vim
    batch/overview
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
